@@ -1,2 +1,0 @@
-src/ClassAndObject/README.md
-
