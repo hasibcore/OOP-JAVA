@@ -26,6 +26,7 @@ public class GameLibrary {
         System.out.println("Filter Rating : ");
         double rate=sc.nextDouble();
         String[] nameArray=LibraryHelper.filterByRating(game, rate);
+        System.out.println("Filtered Game Title : ");
         for(int i=0;i<nameArray.length;i++)
         {
             if(nameArray[i]!=null)
@@ -35,7 +36,7 @@ public class GameLibrary {
            
         }
         LibraryHelper.printAllGames(game);
-        System.out.println("Total Books Created "+Game.totalAvailableGames);
+        System.out.println("Total Games Created "+Game.totalAvailableGames);
     }
     
 }

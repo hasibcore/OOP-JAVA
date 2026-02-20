@@ -21,7 +21,7 @@ public class LibraryHelper {
     public static void printAllGames(Game[] game)
     {
         for (Game game1 : game) {
-            System.out.println(game1.getGameId() + " " + game1.getTitle() + " " + game1.getRating());
+            System.out.println(game1.getGameId() + " " +  game1.getRating()+" "+ game1.getTitle() );
         }
         
     }
