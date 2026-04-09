@@ -8,6 +8,7 @@ public static int totalBooksCreated;
         this.bookId = bookId;
         this.title = title;
         this.price = price;
+        //or int totalBooksCreated=0;;; = totalBooksCrated++;
     }
 
     public int getBookId() {
