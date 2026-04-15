@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming Lab</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 40px;
+            color: black;
+            font-size: 16px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h3 {
+            margin: 0 0 5px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .header p {
+            margin: 0 0 3px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .student-info {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .student-info .marks {
+            text-align: right;
+            line-height: 1.5;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        td {
+            border: 1px solid black;
+            padding: 12px;
+            vertical-align: top;
+        }
+        .marks-col {
+            width: 50px;
+            text-align: center;
+            font-weight: normal;
+        }
+        p {
+            margin: 0 0 10px 0;
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+        code, b, u {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        code {
+            font-weight: normal;
+            font-size: 16px;
+        }
+        .design-constraint {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        ol {
+            margin-top: 5px;
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h3>Ahsanullah University of Science and Technology</h3>
+        <p>Course Title: Object Oriented Programming Lab</p>
+        <p>Course Number: CSE 1206</p>
+        <p>Online 7, Spring 2025 (Set B)</p>
+    </div>
+
+    <div class="student-info">
+        <div>ID: _____________________________________________</div>
+        <div class="marks">
+            Time: 30 Minutes<br>
+            Marks: ______ / 10
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <td>
+                <p><code>ChatGPTService</code> is a software component that handles AI text generation.</p>
+                <p>When generating text, it prints: <b>"Connecting to ChatGPT API to process Prompt: P"</b>, where <code>P</code> is a prompt (String).</p>
+                <p><code>GeminiService</code> is another software component that handles AI text generation.</p>
+                <p>When generating text, it prints: <b>"Connecting to Gemini API to process Prompt: P"</b>, where <code>P</code> is a prompt (String).</p>
+            </td>
+            <td class="marks-col">2</td>
+        </tr>
+        <tr>
+            <td>
+                <p><code>CodeEditor</code> is a software that manages developer interactions and executes user prompts.</p>
+                <p>When a prompt is responded to, it prints <b>"Connecting with AI models for prompt: P"</b>, where <code>P</code> is a prompt (String), and then <b>immediately triggers text generation for the AI service.</b></p>
+            </td>
+            <td class="marks-col">2</td>
+        </tr>
+        <tr>
+            <td>
+                <p><span class="design-constraint">Design Constraint:</span> The system must be designed so that new AI services (such as ClaudeService or CopilotService) can be added in the future without modifying the <code>CodeEditor</code> class. To achieve this, <code>CodeEditor</code> must not instantiate <code>ChatGPTService</code> or <code>GeminiService</code> directly, and it must not use if/else statements to choose between them. The specific AI service must be assigned when a <code>CodeEditor</code> object is created.</p>
+            </td>
+            <td class="marks-col">5</td>
+        </tr>
+        <tr>
+            <td>
+                <p>Implement this entire scenario using the necessary object-oriented principles (classes and interfaces). <b><u>Use only <code>System.out.println</code> for method implementations. Pass P as a method parameter (String).</u></b> Avoid code duplication.</p>
+                <p>Demonstrate your design in the main method by:</p>
+                <ol>
+                    <li>Creating a <code>CodeEditor</code> configured to use <code>ChatGPTService</code>, and responding to a prompt.</li>
+                    <li>Creating a separate <code>CodeEditor</code> configured to use <code>GeminiService</code>, and responding to a different prompt.</li>
+                </ol>
+            </td>
+            <td class="marks-col">1</td>
+        </tr>
+    </table>
+
+</body>
+</html>
